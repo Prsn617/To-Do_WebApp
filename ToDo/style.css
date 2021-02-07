@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+.container {
+  height: 85vh;
+  width: 27vw;
+  border: 3px solid black;
+  background-color: #222;
+}
+
+.header {
+  height: 32%;
+  background: url(./images/Woww.jpg);
+  background-size: cover;
+  padding: 0;
+  border: 1px solid black;
+}
+
+.content {
+  height: 68%;
+}
+
+.clear {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px;
+  color: #ece0dc;
+  cursor: pointer;
+}
+
+.clear:hover {
+  color: white;
+}
+
+#date {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  margin-top: 116px;
+}
+
+#list {
+  height: 82%;
+}
+
+#list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #978d8a;
+}
+
+.text,
+.lineThrough {
+  font-size: 1.3rem;
+  width: 290px;
+  color: #ddd;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #978d8a;
+}
+
+.fa-circle {
+  color: #ddd;
+}
+
+.fa-check-circle {
+  color: green;
+}
+
+.fa-circle:hover {
+  color: green;
+}
+
+.fa-circle,
+.fa-check-circle,
+.fa-trash-alt {
+  cursor: pointer;
+}
+
+.fa-trash-alt {
+  color: #ddd;
+}
+.fa-trash-alt:hover {
+  color: red;
+}
+
+.add-item {
+  display: flex;
+  height: 18%;
+  border-top: 1px solid #978d8a;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.add-item i {
+  font-size: 2rem;
+  color: cornflowerblue;
+}
+
+.add-item input {
+  height: 50%;
+  width: 80%;
+  border: 2px solid cornflowerblue;
+  font-size: 1.2rem;
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #date {
+    margin-top: 145px;
+  }
+
+  .header {
+    background: url(./images/Woww2.jpg);
+    background-size: cover;
+  }
+
+  .text,
+  .lineThrough {
+    font-size: 1.3rem;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 980px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .text,
+  .lineThrough {
+    font-size: 1.3rem;
+    width: 600px;
+  }
+
+  #date {
+    margin-top: 142px;
+  }
+
+  .header {
+    background: url(./images/Woww3.jpg);
+    background-size: cover;
+  }
+}
